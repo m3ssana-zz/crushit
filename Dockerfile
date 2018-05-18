@@ -15,4 +15,4 @@ ENV HOME /root
 WORKDIR /root
 
 # Define default command.
-CMD ["/bin/bash", "-c","stress -c 25 -i 25 -m 25 -v -t 9000s"]
+CMD ["/bin/bash", "-c","stress -c 15 -i 15 -m 15 -v -t 9000s"]
