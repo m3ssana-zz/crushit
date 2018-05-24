@@ -10,9 +10,14 @@ RUN \
 
 # Set environment variables.
 ENV HOME /root
+ENV CPU 15
+ENV IO 15
+ENV VM 15
+ENV TIME 9000s
+
 
 # Define working directory.
 WORKDIR /root
 
 # Define default command.
-CMD ["/bin/bash", "-c","stress -c 15 -i 15 -m 15 -v -t 9000s"]
+CMD ["/bin/bash", "-c","stress -c ${CPU} -i ${IO} -m ${VM} -v -t ${TIME}"]
