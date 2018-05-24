@@ -1,5 +1,5 @@
 FROM ubuntu:latest
-MAINTAINER Ron Messana ron.messana@gmail.com
+LABEL maintainer="ron.messana@gmail.com"
 
 RUN \
     apt-get update && \
